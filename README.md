@@ -1,4 +1,4 @@
-JLM208
+Algoritma ve Programlama Dersi
 ======
 
-Jeoloji Mühendisliği bölümü Bilgisayar Programlama dersi
+Algoritma ve Programlama dersi için örnekler
