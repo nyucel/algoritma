@@ -11,7 +11,7 @@ primes=[]
 for i in range(2,1000000):
     if isprime(i)==1:
         primes.append(i)
-for p in range(540,550):
+for p in range(100,600):
     for i in range(len(primes)-p-1):
         sums = 0
         for j in range(p):
