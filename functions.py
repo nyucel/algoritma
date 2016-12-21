@@ -12,3 +12,13 @@ def isprime(a):
             break
         i += 2
     return(prime)
+
+def divisors(n):
+    """bir sayının bölenlerini bir dizi olarak geri döndüren fonksiyon"""
+    carpanlar = [1]
+    i=2
+    while (i<=n/2):
+        if n%i==0:
+            carpanlar.append(i)
+        i += 1
+    return(carpanlar)
