@@ -13,6 +13,18 @@ def isprime(a):
         i += 2
     return(prime)
 
+def ispandigital(n):
+    """bir sayının pandigital sayı olup olmadığını kontrol eden fonksiyon"""
+    number = []
+    for i in str(n):
+        number.append(int(i))
+    for i in range(1,len(number)+1):
+        if(number.count(i)==0):
+            return(0)
+            break
+    else:
+        return(1)
+
 def allprimes(n):
     """bir sayıdan küçük bütün asal sayıları dizi olarak döndüren fonksiyon"""
     primes=[]
