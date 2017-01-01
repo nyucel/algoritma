@@ -4,6 +4,8 @@
 def isprime(a):
     """bir sayının asal olup olmadığını kontrol eden fonksiyon"""
     i,prime=3,1
+    if(a<2):
+        prime=0
     if a!=2 and a%2==0:
         prime=0
     while prime!=0 and i<=a**(1/2):
