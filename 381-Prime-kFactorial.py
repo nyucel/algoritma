@@ -10,7 +10,7 @@
 # Bu ifadeyi (p-1)! parantezine alıp (p-2)(mod p) yerine -2 yazıldığında 
 # (elbette diğerleri için de aynı şeyi yaparak) ve Wilson Teoremini kullanarak S(p)=-3/8(mod p) sonucuna ulaşılır.
 # Buradan da S(p)=(p-3)/8 (mod p) elde edilir.
-# Kolayca görülebileceği gibi S(p) ancak p'nin asal olduğu durumlarda sıfırdan farklı değer verdiği görülebilir.
+# Kolayca S(p)'nin ancak p'nin asal olduğu durumlarda sıfırdan farklı değer verdiği görülebilir.
 # p'nin asal olduğu bilinince Fermatın Küçük Teoremi kullanılarak paydadaki 8'in tersi bulunabilir.
 
 from functions import allprimes
