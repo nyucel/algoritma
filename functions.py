@@ -23,7 +23,6 @@ def ispandigital(n):
     for i in range(1,len(number)+1):
         if(number.count(i)==0):
             return(0)
-            break
     else:
         return(1)
 
