@@ -9,7 +9,7 @@ def x(n):
         sonuc = 1
     elif(n>1 and n%2==0):
         sonuc = (3*x(int(n/2))+2*x(int(n/4)))%2**60
-    elif(n>1 and n%2==1):
+    else:
         sonuc = (2*x(int((n-1)/2))+3*x(int((n-1)/4)))%2**60
     return(sonuc)
 
