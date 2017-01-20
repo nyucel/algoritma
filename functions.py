@@ -54,24 +54,24 @@ def squarefree(LIMIT):
     N = int(LIMIT**(1/2))+1
     divisors = [0]*N
     for i in count(2):
-        if i**2>=LIMIT:
+        if(i**2>=LIMIT):
             break
-        if divisors[i]!=0:
+        if(divisors[i]!=0):
             continue
-        if divisors[i]==-1:
+        if(divisors[i]==-1):
             continue
-        if i**2<N:
+        if(i**2<N):
             for j in range(i**2,N,i**2):
                 divisors[j]=-1
         for j in range(i,N,i):
-            if divisors[j]==-1:
+            if(divisors[j]==-1):
                 continue
             divisors[j] += 1
     toplam=0
     for i in range(2,N):
-        if divisors[i]==-1:
+        if(divisors[i]==-1):
             continue
-        if divisors[i]&1:
+        if(divisors[i]&1):
             toplam += LIMIT//(i**2)
         else:
             toplam -= LIMIT//(i**2)
