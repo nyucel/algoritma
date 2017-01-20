@@ -47,3 +47,32 @@ def divisors(n):
             carpanlar.append(i)
         i += 1
     return(carpanlar)
+
+def squarefree(LIMIT):
+    """Bir sayıdan küçük, hiç bir asal sayının karesine bölünmeyen sayıların sayısını döndüren fonksiyon"""
+    from itertools import count
+    N = int(LIMIT**(1/2))+1
+    divisors = [0]*N
+    for i in count(2):
+        if i**2>=LIMIT:
+            break
+        if divisors[i]!=0:
+            continue
+        if divisors[i]==-1:
+            continue
+        if i**2<N:
+            for j in range(i**2,N,i**2):
+                divisors[j]=-1
+        for j in range(i,N,i):
+            if divisors[j]==-1:
+                continue
+            divisors[j] += 1
+    toplam=0
+    for i in range(2,N):
+        if divisors[i]==-1:
+            continue
+        if divisors[i]&1:
+            toplam += LIMIT//(i**2)
+        else:
+            toplam -= LIMIT//(i**2)
+    return(LIMIT-toplam)
