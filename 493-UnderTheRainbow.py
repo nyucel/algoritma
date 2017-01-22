@@ -4,11 +4,6 @@
 # What is the expected number of distinct colors in 20 randomly picked balls?
 # Give your answer with nine digits after the decimal point (a.bcdefghij).
 
-from math import factorial
+from functions import nCr
 
-def nCr(n,r):
-    return(factorial(n)/(factorial(r)*factorial(n-r)))
-
-sonuc = 7*(1-(nCr(60,20)/nCr(70,20)))
-
-print(sonuc)
+print(str(7*(1-(nCr(60,20)/nCr(70,20))))[:11])
