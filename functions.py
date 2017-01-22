@@ -76,3 +76,8 @@ def squarefree(LIMIT):
         else:
             toplam -= LIMIT//(i**2)
     return(LIMIT-toplam)
+
+def nCr(n,r):
+    """n eleman içinden r'nin kaç farklı şekilde seçilebileceğini veren fonksiyon"""
+    from math import factorial
+    return(int(factorial(n)/(factorial(r)*factorial(n-r))))
