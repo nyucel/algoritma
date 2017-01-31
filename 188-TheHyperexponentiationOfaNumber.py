@@ -4,6 +4,5 @@
 
 a = 1
 for i in range(1855):
-    b = pow(1777,a,10**8)
-    a = b
+    a = pow(1777,a,10**8)
 print(a)
