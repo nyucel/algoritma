@@ -8,6 +8,7 @@ triangle = []
 for line in dosya.readlines():
     line = line.rstrip('\n').split(' ')
     triangle.append(line)
+dosya.close()
 
 for n in range(len(triangle)-2,-1,-1):
     for m in range(len(triangle[n])):
