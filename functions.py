@@ -3,17 +3,16 @@
 
 def isprime(a):
     """bir sayının asal olup olmadığını kontrol eden fonksiyon"""
-    i,prime=3,1
+    i=3
     if(a<2):
-        prime=0
+        return(0)
     if a!=2 and a%2==0:
-        prime=0
-    while prime!=0 and i<=a**(1/2):
+        return(0)
+    while i<=a**(1/2):
         if a%i==0:
-            prime=0
-            break
+            return(0)
         i += 2
-    return(prime)
+    return(1)
 
 def ispandigital(n):
     """bir sayının pandigital sayı olup olmadığını kontrol eden fonksiyon"""
