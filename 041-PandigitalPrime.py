@@ -6,7 +6,7 @@
 from functions import allprimes
 from functions import ispandigital
 
-primes=allprimes(10000000)[::-1]
+primes=allprimes(10**7)[::-1]
 
 for n in primes:
     if(ispandigital(n)==1):
