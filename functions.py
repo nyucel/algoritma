@@ -40,11 +40,13 @@ def allprimes(n):
 def divisors(n):
     """bir sayının bölenlerini bir dizi olarak geri döndüren fonksiyon"""
     carpanlar = [1]
-    i=2
-    while (i<=n/2):
-        if n%i==0:
-            carpanlar.append(i)
-        i += 1
+    q = int(n**(1/2)//1)+1
+    for p in range(2, q):
+        if(n%p==0):
+            carpanlar.append(p)
+            carpanlar.append(int(n/p))
+    if((q-1)**2==n):
+        return(carpanlar[:-1])
     return(carpanlar)
 
 def squarefree(LIMIT):
