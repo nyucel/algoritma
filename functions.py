@@ -27,9 +27,7 @@ def ispandigital(n):
 
 def allprimes(n):
     """bir sayıdan küçük bütün asal sayıları dizi olarak döndüren fonksiyon"""
-    primes=[]
-    for i in range(2,n+1):
-        primes.append(i)
+    primes = list(range(2,n+1,1))
     for x in range(0,int(n/2)+1):
         if(primes[x]!=0):
             for i in range(x+primes[x],n-1,primes[x]):
