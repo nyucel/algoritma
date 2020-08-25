@@ -10,7 +10,6 @@ from functions import allprimes
 
 asal = allprimes(4000)
 toplam = []
-a,p = 0, 5
 
 for p in range(5,len(asal)):
     for a in range(0,len(asal)-p):
