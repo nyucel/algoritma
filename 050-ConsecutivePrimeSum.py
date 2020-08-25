@@ -15,5 +15,5 @@ a,p = 0, 5
 for p in range(5,len(asal)):
     for a in range(0,len(asal)-p):
         if(isprime(sum(asal[a:a+p]))==1 and sum(asal[a:a+p])<1000000):
-            toplam.append([sum(asal[a:a+p]),p])
-print(toplam[-1][0])
+            toplam.append(sum(asal[a:a+p]))
+print(toplam[-1])
