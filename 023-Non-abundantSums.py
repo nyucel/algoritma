@@ -6,18 +6,18 @@
 # Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
 from functions import divisors
 
-def list_diff(list1, list2):
-        return (list(set(list1) - set(list2)))
-
 liste = []
+toplamlar = set()
+
 for n in range(11,28123):
     if(sum(divisors(n))>n):
         liste.append(n)
 
-toplamlar = set()
 for p in liste:
     for q in liste:
         if(p+q<28123):
             toplamlar.add(p+q)
-sayilar = list(range(1,28123))
-print(sum(list_diff(sayilar,toplamlar)))
+
+sayilar = set(range(1,28123))
+
+print(sum(sayilar-toplamlar))
