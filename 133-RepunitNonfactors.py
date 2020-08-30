@@ -6,9 +6,9 @@
 # Find the sum of all the primes below one-hundred thousand that will never be a factor of R(10^n).
 # https://en.wikipedia.org/wiki/Repunit adresinden de görülebileceği gibi bu sayılar R(n)=10^n-1 şeklinde yazılabiliyor.
 
-from sympy import primerange
+from functions import allprimes
 
-primes = primerange(2,100000)
+primes = allprimes(100000)
 
 bolen = 3
 L = 10**20
