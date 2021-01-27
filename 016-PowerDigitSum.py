@@ -4,6 +4,8 @@
 # What is the sum of the digits of the number 2^1000?
 
 sonuc = 0
-for n in str(2**1000):
-    sonuc += int(n)
+n = 2**1000
+while(n):
+    sonuc += n%10
+    n = n//10
 print(sonuc)
