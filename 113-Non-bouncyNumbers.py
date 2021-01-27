@@ -7,5 +7,5 @@
 # How many numbers below a googol (10^100) are not bouncy?
 
 from functions import nCr
-LIMIT = 10
+LIMIT = 100
 print((nCr(LIMIT+10,10)-LIMIT-1)+(nCr(LIMIT+9,9)-1)-LIMIT*9)
