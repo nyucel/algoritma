@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 # https://projecteuler.net/problem=266
 
-from sympy import primerange
+from functions import allprimes
 from math import sqrt
 from bisect import bisect_left
 
-primes = list(primerange(2,190))
+primes = allprimes(190)
 
 p = 1
 for n in primes:
