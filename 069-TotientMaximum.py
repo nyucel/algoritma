@@ -4,7 +4,7 @@
 # It can be seen that n=6 produces a maximum n/φ(n) for n ≤ 10.
 # Find the value of n ≤ 1,000,000 for which n/φ(n) is a maximum.
 
-from fractions import gcd
+from math import gcd
 def totient(n):
     sonuc=1
     for i in range(2,n):
