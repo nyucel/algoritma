@@ -3,7 +3,7 @@
 # a^2+b^2=c^2 şeklindeki bütün pisagor üçlüleri s>t>0 olmak üzere
 # a = st, b = (s^2-t^2)/2, c = (s^2+t^2)/2 şeklinde yazılabilir. 
 
-from fractions import gcd
+from math import gcd
 from math import sqrt
 
 def dickson(LIMIT):
