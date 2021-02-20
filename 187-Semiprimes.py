@@ -6,12 +6,12 @@
 # 10^8'den yarısından küçük her asal için kendinden küçük eşit asal sayılarla çarpımından oluşturulan sayılar sayıldığında aranan sonuç bulunmuş oluyor.
 
 from sympy import primepi
-from sympy import primerange
+from functions import allprimes
 
 sonuc = 0
 
 LIMIT = 10**8
-primes = primerange(2,LIMIT//2)
+primes = allprimes(LIMIT//2)
 
 for n in primes:
     if(n<LIMIT**(0.5)):
