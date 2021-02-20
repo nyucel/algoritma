@@ -7,9 +7,9 @@
 # n asal sayısının (10^(10^9) - 1)'i bölmesi gerektiğini biliyoruz. Bu nedenle python'un pow fonksiyonunu kullanarak sonucu bulmak çok kolay oluyor.
 # pow kullanmak yerine 10**L%n yazmayı denediğinizde işlemlerin süresinin karşılaştırılamayacak kadar uzun sürdüğünü görebilirsiniz.
 
-from sympy import primerange
+from functions import allprimes
 
-primes = primerange(5,1000000)
+primes = allprimes(1000000)[2:]
 
 bolen = []
 L = 10**9
