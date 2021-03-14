@@ -8,7 +8,7 @@ for i in range(2, len(enkucuk)):
     if enkucuk[i] == 0:
         kuvvet = 1
         j = i
-        while(kuvvet<LIMIT):
+        while(kuvvet<LIMIT//2):
             kuvvet *= i
             for k in range(kuvvet, len(enkucuk), kuvvet):
                 enkucuk[k] = max(j, enkucuk[k])
